@@ -1,0 +1,98 @@
+body{
+    font-family:"微軟正黑體";
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, #637873,rgb(105, 105, 105));
+}
+
+button{
+    width:500px;
+    height:50px;
+    border-radius: 10px;
+    font-family:"微軟正黑體";
+    font-size:24px;
+    background-color: #6AAFE6;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #CADBE9;
+}
+#container{
+    width:600px;
+    height:360px;
+    position: relative;
+    margin: 80px auto;
+    box-shadow: 10px 10px rgb(255,255,255,0.1);
+    border-radius: 50px;
+
+}
+
+#left{
+    width:250px;
+    height:360px;
+    float:left;
+    background-color:#6AAFE6 ;
+    border-radius: 48px 0 0 48px;
+
+}
+
+#right{
+    width:330px;
+    height:340px;
+    float:right;
+    background-color:#CADBE9;
+    border-radius: 0 48px 48px 0;
+    padding-top:20px;
+    padding-left:20px;
+}
+
+
+
+.name{
+    width:200px;
+    height:40px;
+    position: absolute;
+    top:250px;
+    left:10px;
+    color:white;
+    font-size:35px;
+    font-weight:bold;
+    text-align: center;
+}
+.photo{
+    position: absolute;
+    top:30px;
+    left:18px;
+
+}
+
+.photo_cir{
+    border:8px solid #CADBE9;
+    border-radius: 50% 50%;
+    width:200px;
+    height: 200px;
+    background-size: cover;   
+}
+
+.title{
+    width:280px;
+    height:35px;
+    background-color:#6AAFE6;
+    border-radius: 7px;
+    font-size: 20px;
+    margin-left:10px;
+    margin-top:10px;
+    padding-left:10px;
+    line-height:35px;
+    color:white;
+}
+
+.itr{
+    color:rgb(61, 61, 61);
+    font-size: 18px;
+    padding-left:40px;
+    line-height: 35px;
+
+}

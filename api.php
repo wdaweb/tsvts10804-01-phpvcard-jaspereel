@@ -1,6 +1,19 @@
 <?php
-/**
- * 設計`api.php`，能將form表單的資料包含圖片路徑(記得存入空間)一起轉成SESSION或COOKIE接著導向到preview.php。
- * 導向連結可用`header('location:preview.php');`
- */
+
+session_start();
+
+$_SESSION['name']=$_POST['name'];
+$_SESSION['position']=$_POST['position'];
+$_SESSION['skill']=$_POST['skill'];
+$_SESSION['mail']=$_POST['mail'];
+$_SESSION['mobile']=$_POST['mobile'];
+$_SESSION['module']=$_POST['module'];
+
+if (!empty($_FILES)) {
+    copy($_FILES['photo']['tmp_name'], "photo/". $_FILES['photo']['name']);   
+}
+
+$_SESSION['pname']=$_FILES['photo']['name'];
+header('location:preview.php');
+
 ?>
